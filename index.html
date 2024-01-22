@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <div class="input-container">
+      <label for="height">Height (cm):</label>
+      <div class="input-wrapper">
+        <input type="number" id="height" placeholder="Enter height in cm">
+        <button class="clear" onclick="clearInput('height')">Clear</button>
+      </div>
+      <div class="button-container">
+
+        <button class="number" onclick="appendToInput('1', 'height')">1</button>
+        <button class="number" onclick="appendToInput('2', 'height')">2</button>
+        <button class="number" onclick="appendToInput('3', 'height')">3</button>
+        <button class="number" onclick="appendToInput('4', 'height')">4</button>
+        <button class="number" onclick="appendToInput('5', 'height')">5</button>
+        <button class="number" onclick="appendToInput('6', 'height')">6</button>
+        <button class="number" onclick="appendToInput('7', 'height')">7</button>
+        <button class="number" onclick="appendToInput('8', 'height')">8</button>
+        <button class="number" onclick="appendToInput('9', 'height')">9</button>
+        <button class="number" onclick="appendToInput('0', 'height')">0</button>
+      </div>
+    </div>
+    <div class="input-container">
+      <label for="weight">Weight (kg):</label>
+      <div class="input-wrapper">
+        <input type="number" id="weight" placeholder="Enter weight in kg">
+        <button class="clear" onclick="clearInput('weight')">Clear</button>
+      </div>
+      <div class="button-container">
+    
+        <button class="number" onclick="appendToInput('1', 'weight')">1</button>
+        <button class="number" onclick="appendToInput('2', 'weight')">2</button>
+        <button class="number" onclick="appendToInput('3', 'weight')">3</button>
+        <button class="number" onclick="appendToInput('4', 'weight')">4</button>
+        <button class="number" onclick="appendToInput('5', 'weight')">5</button>
+        <button class="number" onclick="appendToInput('6', 'weight')">6</button>
+        <button class="number" onclick="appendToInput('7', 'weight')">7</button>
+        <button class="number" onclick="appendToInput('8', 'weight')">8</button>
+        <button class="number" onclick="appendToInput('9', 'weight')">9</button>
+        <button class="number" onclick="appendToInput('0', 'weight')">0</button>
+      </div>
+    </div>
+    <button class="clear-all" onclick="clearAllInputs()">Clear All</button>
+    <button class="calculate-button" onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
